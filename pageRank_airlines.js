@@ -9,17 +9,20 @@ var params = {
 };
 
 // execute the algorithm
-var handle = pregel.start("pagerank","airlines",params);
+var handle = pregel.start(
+    "pagerank", // algorithm name
+    "airlines", // graph name
+    params      // variable with parameters 
+    );
 
 // wait for it to finish
 while (!["done"].includes(pregel.status(handle).state)){
     print("PageRank is still executing");
-}
+    await delay(5000);
+};
 
 // get summary for the execution
-result = pregel.status(handle)
-
-print("PageRank is " + result.state)
+result = pregel.status(handle);
 
 // display the summary
-print(result)
+print(result);

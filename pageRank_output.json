@@ -1,0 +1,83 @@
+{ 
+  "id" : "14629", 
+  "database" : "airlines", 
+  "algorithm" : "PageRank", 
+  "created" : "2023-03-21T02:41:04Z", 
+  "expires" : "2023-03-21T02:51:04Z", 
+  "ttl" : 600, 
+  "state" : "done", 
+  "gss" : 2, 
+  "totalRuntime" : 0.243544709, 
+  "startupTime" : 0.165670292, 
+  "computationTime" : 0.014555041, 
+  "storageTime" : 0.063319, 
+  "gssTimes" : [ 
+    0.00761925, 
+    0.006565292 
+  ], 
+  "aggregators" : { 
+    "convergence" : 0.011072180233895779 
+  }, 
+  "sendCount" : 572926, 
+  "receivedCount" : 286463, 
+  "reports" : [ ], 
+  "vertexCount" : 3375, 
+  "edgeCount" : 286463, 
+  "masterContext" : { 
+  }, 
+  "useMemoryMaps" : true, 
+  "detail" : { 
+    "aggregatedStatus" : { 
+      "timeStamp" : "2023-03-21T02:41:04Z", 
+      "graphStoreStatus" : { 
+        "verticesLoaded" : 3375, 
+        "edgesLoaded" : 286463, 
+        "memoryBytesUsed" : 5560964, 
+        "verticesStored" : 3375 
+      }, 
+      "allGssStatus" : { 
+        "items" : [ 
+          { 
+            "verticesProcessed" : 3375, 
+            "messagesSent" : 286463, 
+            "messagesReceived" : 0, 
+            "memoryBytesUsedForMessages" : 1145852 
+          }, 
+          { 
+            "verticesProcessed" : 3375, 
+            "messagesSent" : 286463, 
+            "messagesReceived" : 286, 
+            "memoryBytesUsedForMessages" : 1146996 
+          } 
+        ] 
+      } 
+    }, 
+    "workerStatus" : { 
+      "" : { 
+        "timeStamp" : "2023-03-21T02:41:04Z", 
+        "graphStoreStatus" : { 
+          "verticesLoaded" : 3375, 
+          "edgesLoaded" : 286463, 
+          "memoryBytesUsed" : 5560964, 
+          "verticesStored" : 3375 
+        }, 
+        "allGssStatus" : { 
+          "items" : [ 
+            { 
+              "verticesProcessed" : 3375, 
+              "messagesSent" : 286463, 
+              "messagesReceived" : 0, 
+              "memoryBytesUsedForMessages" : 1145852 
+            }, 
+            { 
+              "verticesProcessed" : 3375, 
+              "messagesSent" : 286463, 
+              "messagesReceived" : 286, 
+              "memoryBytesUsedForMessages" : 1146996 
+            } 
+          ] 
+        } 
+      } 
+    } 
+  } 
+}
