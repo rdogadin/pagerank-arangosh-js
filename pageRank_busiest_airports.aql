@@ -1,0 +1,15 @@
+// show airports with highest ranks
+FOR a IN airports
+    SORT a.pageRank DESC
+    LIMIT 5
+    RETURN {'airport_IATA':a._key,
+            'name': a.name,
+            'city': a.city,
+            'pageRank': a.pageRank
+            }
+
+// display high-rank airports on the map using geocodes
+FOR a IN airports
+    SORT a.pageRank DESC
+    LIMIT 5
+    RETURN GEO_POINT(a.long,a.lat)
